@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(97deg, #000000 50.62%, #1a272c 85.61%);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.logo-cabecalho {
+    max-height: 130px;
+}
+
+.principal {
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+    color: #a7e7f0;
+    line-height: 30px;
+}
+
+.principal p {
+    margin: 0 0 1em;
+    text-align: justify;
+}
+
+.principal strong {
+    font-weight: bold;   
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.titulo_principal {
+    font-family: 'Righteous', cursive;
+    font-weight: 300;
+    text-align: center;
+    font-size: 2em;
+    color: #48dee9;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.protecao {
+    width: 270px;
+    float: left;
+    margin: 0 20px 20px 0;
+    border-radius: 50%;
+}
+
+.beneficios {
+    padding: 3em 0;
+}
+
+.conteudo_beneficios {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.lista_beneficios {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    color: #a7e7f0;
+}
+
+.características {
+    line-height: 1.5;
+    margin-top: 1em;
+    
+}
+
+.características:before {
+    content: "🟊";
+}
+
+.imagem_beneficios {
+    width: 50%;
+    opacity: 1;
+    transition: 400ms;
+    border-radius: 200px;
+    transform: scaleX(-1);
+    opacity: 0.45;
+}
+
+.imagem_beneficios:hover {
+    opacity: 0.95;
+}
+
+.input_padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+    background-color: #000000;
+    color: #a7e7f0;
+    border: 1.9px solid #146b67;
+    border-radius: 4px;    
+}
+
+form {
+    margin: 40px;
+    margin-left: 36%;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #a7e7f0;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 30%;
+    padding: 15px 0;
+    background: #08678c;
+    color: rgb(229, 245, 250);
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #0a93b6;
+    transform: scale(1.05);
+}
+
+footer {
+    position: relative;
+    top: 85%;
+    width: auto;
+    text-align: center;
+    padding: 35px;
+}
+
+.copyright {
+    color: #a7e7f0;
+    font-size: 13px;
+    align-content: center;
+}
+
+/*Tablets*/
+@media screen and (max-width: 768px) {
+
+    body {
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .caixa {
+        position: absolute;
+        width: auto;
+        left: 12px;
+        top: 20px;
+    }
+
+    .principal {
+        width: 90%;
+        align-content: center;
+        margin: 120px 15px 10px;
+        padding: 20px 20px;
+    }
+
+    h2 {
+        width: 100%;
+        align-content: center;
+        margin: 0px 0px 20px;
+        padding: 20px 20px;
+    }
+
+    .protecao {
+        width: 40%;
+        margin: 10px 10px 10px;
+        padding: 10px 10px;
+    }
+
+    .beneficios {
+        width: 90%;
+        align-content: center;
+        margin: 0px 0px 30px;
+        padding: 0px 20px;
+    }
+
+    h3 {
+        width: 100%;
+        align-content: center;
+        margin: 0px 0px 10px;
+        padding: 20px 20px;
+    }
+
+    .conteudo_beneficios {
+        width: 100%;
+        align-content: center;
+        margin: 0px 0px 30px;
+        padding: 0px 20px;
+    }
+
+    .lista_beneficios {
+        width: 100%;
+        align-content: center;
+        margin: 0px 0px 30px;
+        padding: -10px 20px;   
+    }
+
+    .imagem_beneficios {
+        width: 0%;
+    }
+   
+    form {
+        width: 90%;
+        align-content: center;
+        margin: 0px 15px 10px;
+        padding: 20px 20px;
+    }
+
+    .input_padrao {
+        width: 80%;        
+    }
+
+    legend {
+        padding: 10px 0px;
+    }
+
+    .enviar {
+        width: 100%;
+    }
+
+    .copyright {
+        align-content: center;
+    }
+}
+
+/*Smartphones*/
+@media screen and (max-width: 480px) {
+
+    body {
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .caixa {
+        position: absolute;
+        width: auto;
+        left: 12px;
+        top: 20px;
+    }
+
+    .principal {
+        width: 90%;
+        align-content: center;
+        margin: 120px 0px 0px;
+        padding: 20px 20px;
+    }
+
+    h2 {
+        width: 90%;
+        align-content: center;
+        margin: 0px 0px 10px;
+        padding: 10px 20px;
+    }
+
+    .protecao {
+        width: 40%;
+        margin: 10px 10px 10px;
+        padding: 10px 10px;
+    }
+
+    .beneficios {
+        width: 90%;
+        align-content: center;
+        margin: 0px 0px 30px;
+        padding: 20px 20px;
+    }
+
+    h3 {
+        width: 90%;
+        align-content: center;
+        margin: 0px 0px 10px;
+        padding: 10px 20px;
+    }
+
+    .conteudo_beneficios {
+        width: 90%;
+        align-content: center;
+        margin: 0px 0px 30px;
+        padding: 10px 20px;
+    }
+
+    .lista_beneficios {
+        width: 100%;
+        align-content: center;
+        margin: 0px 0px 0px;
+        padding: -10px 20px;   
+    }
+   
+    .imagem_beneficios {
+        width: 0%;
+    }
+
+    form {
+        width: 90%;
+        align-content: center;
+        margin: 0px 0px 30px;
+        padding: 0px 20px;
+    }
+
+    .input_padrao {
+        width: 80%;        
+    }
+
+    legend {
+        padding: 10px 0px;
+    }
+
+    .enviar {
+        width: 100%;
+    }
+
+    .copyright {
+        align-content: center;
+    }
+}
